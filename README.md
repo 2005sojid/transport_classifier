@@ -2,7 +2,7 @@
 
 Vision-based classifier for special transport vehicles: ambulance, police, fire truck, bus, minibus vs regular car.
 
-**Architecture**: DINOv2 ViT-L/14 → L2-normalized CLS embedding (1024-dim) → weighted cosine kNN
+**Architecture**: DINOv2 ViT-B/14 → L2-normalized CLS embedding (768-dim) → weighted cosine kNN
 
 ## Classes
 
@@ -23,19 +23,20 @@ Vision-based classifier for special transport vehicles: ambulance, police, fire 
 Color is the primary discriminator: fire truck (red), ambulance (red stripe), police (blue stripes).
 No model training — adding new reference images only requires rebuilding the gallery.
 
-## Results (Leave-One-Out evaluation, 473 images)
+## Results (Leave-One-Out evaluation, 391 images)
 
-| Class | Precision | Recall | F1 |
-|-------|-----------|--------|----|
-| ambulance | 0.811 | 0.938 | 0.870 |
-| bus | 1.000 | 1.000 | 1.000 |
-| car | 0.923 | 0.810 | 0.863 |
-| fire_truck | 1.000 | 1.000 | 1.000 |
-| minibus | 0.965 | 0.948 | 0.957 |
-| police | 0.842 | 0.927 | 0.882 |
-| **weighted avg** | **0.907** | **0.903** | **0.902** |
+| Class | Precision | Recall | F1 | Support |
+|-------|-----------|--------|----|---------|
+| ambulance | 0.737 | 0.875 | 0.800 | 48 |
+| bus | 1.000 | 1.000 | 1.000 | 52 |
+| car | 0.805 | 0.692 | 0.744 | 143 |
+| fire_truck | 0.909 | 0.909 | 0.909 | 11 |
+| minibus | 1.000 | 0.911 | 0.954 | 45 |
+| police | 0.701 | 0.815 | 0.754 | 92 |
+| **weighted avg** | **0.823** | **0.816** | **0.816** | |
 
-**Accuracy: 90.3%** — honest LOO (all augmented copies of test image excluded from gallery)
+**Accuracy: 81.6%** — honest LOO (all augmented copies of test image excluded from gallery)
+Inference: 44.8 ms/image on GPU (CUDA)
 
 ## Setup
 
@@ -43,7 +44,7 @@ No model training — adding new reference images only requires rebuilding the g
 pip install -r requirements.txt
 ```
 
-DINOv2 model (~1.2 GB) downloads automatically on first run via `torch.hub`.
+DINOv2 model (~330 MB) downloads automatically on first run via `torch.hub`.
 
 ## Usage
 
@@ -93,7 +94,7 @@ Outputs per-class metrics, confusion matrix PNG, and full JSON report in `eval_r
 
 | File | Description |
 |------|-------------|
-| `backbone.py` | DINOv2 ViT-L/14 via torch.hub, L2-normalized embeddings |
+| `backbone.py` | DINOv2 ViT-B/14 via torch.hub, L2-normalized embeddings |
 | `augmentation.py` | Geometric augmentations (no color shift — color is discriminative) |
 | `build_gallery.py` | Build reference gallery from image folders |
 | `classifier.py` | `GalleryKNN` — cosine kNN with softmax weighting |

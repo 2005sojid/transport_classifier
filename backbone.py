@@ -1,5 +1,5 @@
 """
-DINOv2 ViT-L/14 feature extractor via torch.hub (no HuggingFace auth needed).
+DINOv2 ViT-B/14 feature extractor via torch.hub (no HuggingFace auth needed).
 Returns L2-normalized embeddings ready for cosine similarity via dot product.
 """
 import torch
@@ -13,7 +13,7 @@ import config
 _model = None
 _device = None
 
-# DINOv2 standard preprocessing (ImageNet stats, 518x518 for ViT-L/14)
+# DINOv2 standard preprocessing (ImageNet stats, 518x518 for ViT-B/14)
 _DINO_TRANSFORM = T.Compose([
     T.Resize(518, interpolation=T.InterpolationMode.BICUBIC),
     T.CenterCrop(518),
@@ -26,14 +26,14 @@ def _load():
     global _model, _device
     if _model is not None:
         return
-    _device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(f"[backbone] Loading dinov2_vitl14 via torch.hub on {_device} ...")
+    _device = "cpu"
+    print(f"[backbone] Loading dinov2_vitb14 via torch.hub on {_device} ...")
     import warnings
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         _model = torch.hub.load(
             "facebookresearch/dinov2",
-            "dinov2_vitl14",
+            "dinov2_vitb14",
             pretrained=True,
         )
     _model.eval().to(_device)
@@ -51,12 +51,12 @@ def embed_images(images: list[Image.Image]) -> np.ndarray:
 
     if config.USE_PATCH_TOKENS:
         out = _model.forward_features(tensors)
-        cls = out["x_norm_clstoken"]          # (N, 1024)
-        patches = out["x_norm_patchtokens"]   # (N, P, 1024)
-        mean_patch = patches.mean(dim=1)       # (N, 1024)
-        emb = torch.cat([cls, mean_patch], dim=1)  # (N, 2048)
+        cls = out["x_norm_clstoken"]          # (N, 768)
+        patches = out["x_norm_patchtokens"]   # (N, P, 768)
+        mean_patch = patches.mean(dim=1)       # (N, 768)
+        emb = torch.cat([cls, mean_patch], dim=1)  # (N, 1536)
     else:
-        emb = _model(tensors)                  # (N, 1024) — CLS token
+        emb = _model(tensors)                  # (N, 768) — CLS token
 
     emb = F.normalize(emb, dim=1)
     return emb.cpu().float().numpy()

@@ -2,15 +2,15 @@
   "k": 11,
   "temperature": 0.1,
   "n_evaluated": 391,
-  "elapsed_sec": 33.77,
+  "elapsed_sec": 17.52,
   "metrics": {
     "ambulance": {
-      "precision": 0.75,
+      "precision": 0.7368,
       "recall": 0.875,
-      "f1": 0.8077,
+      "f1": 0.8,
       "support": 48,
       "tp": 42,
-      "fp": 14,
+      "fp": 15,
       "fn": 6
     },
     "bus": {
@@ -23,52 +23,52 @@
       "fn": 0
     },
     "car": {
-      "precision": 0.8992,
-      "recall": 0.7483,
-      "f1": 0.8168,
+      "precision": 0.8049,
+      "recall": 0.6923,
+      "f1": 0.7444,
       "support": 143,
-      "tp": 107,
-      "fp": 12,
-      "fn": 36
+      "tp": 99,
+      "fp": 24,
+      "fn": 44
     },
     "fire_truck": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
+      "precision": 0.9091,
+      "recall": 0.9091,
+      "f1": 0.9091,
       "support": 11,
-      "tp": 11,
-      "fp": 0,
-      "fn": 0
+      "tp": 10,
+      "fp": 1,
+      "fn": 1
     },
     "minibus": {
-      "precision": 0.9535,
+      "precision": 1.0,
       "recall": 0.9111,
-      "f1": 0.9318,
+      "f1": 0.9535,
       "support": 45,
       "tp": 41,
-      "fp": 2,
+      "fp": 0,
       "fn": 4
     },
     "police": {
-      "precision": 0.7818,
-      "recall": 0.9348,
-      "f1": 0.8515,
+      "precision": 0.7009,
+      "recall": 0.8152,
+      "f1": 0.7538,
       "support": 92,
-      "tp": 86,
-      "fp": 24,
-      "fn": 6
+      "tp": 75,
+      "fp": 32,
+      "fn": 17
     },
     "_macro": {
-      "precision": 0.8974,
-      "recall": 0.9115,
-      "f1": 0.9013
+      "precision": 0.8586,
+      "recall": 0.8671,
+      "f1": 0.8601
     },
     "_weighted": {
-      "precision": 0.8758,
-      "recall": 0.867,
-      "f1": 0.8666
+      "precision": 0.8234,
+      "recall": 0.8158,
+      "f1": 0.8161
     },
-    "_accuracy": 0.867
+    "_accuracy": 0.8159
   },
   "confusion_matrix": [
     [
@@ -76,8 +76,8 @@
       0,
       5,
       0,
-      1,
-      0
+      0,
+      1
     ],
     [
       0,
@@ -88,36 +88,36 @@
       0
     ],
     [
-      11,
+      12,
       0,
-      107,
-      0,
+      99,
       1,
-      24
+      0,
+      31
     ],
     [
       0,
       0,
-      0,
-      11,
+      1,
+      10,
       0,
       0
     ],
     [
-      2,
+      1,
       0,
-      2,
+      3,
       0,
       41,
       0
     ],
     [
-      1,
+      2,
       0,
-      5,
+      15,
       0,
       0,
-      86
+      75
     ]
   ],
   "class_names": [
@@ -253,14 +253,14 @@
       "path": "D:/vehicle_refs\\ambulance\\01064BNA_2025-09-03_22_06_11_e87d39d8-66d9-4fa4-89bc-2757d157e5a0.jpg",
       "true": "ambulance",
       "pred": "ambulance",
-      "confidence": 1.0,
+      "confidence": 0.5615,
       "correct": true,
       "scores": {
-        "ambulance": 1.0,
+        "ambulance": 0.5615,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.1674,
         "fire_truck": 0.0,
-        "minibus": 0.0,
+        "minibus": 0.2711,
         "police": 0.0
       }
     },
@@ -552,16 +552,16 @@
     {
       "path": "D:/vehicle_refs\\ambulance\\01236JAA_2026-01-21_16_10_03_df9c6ea5-7140-47ab-b3e2-cbfa34a10766.jpg",
       "true": "ambulance",
-      "pred": "ambulance",
-      "confidence": 0.657,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.6379,
+      "correct": false,
       "scores": {
-        "ambulance": 0.657,
+        "ambulance": 0.3621,
         "bus": 0.0,
         "car": 0.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.343
+        "police": 0.6379
       }
     },
     {
@@ -582,15 +582,15 @@
     {
       "path": "D:/vehicle_refs\\ambulance\\01264STY_2026-01-20_11_26_33_0dc9c38b-cbe2-4865-a040-a1ff3a7f61d1.jpg",
       "true": "ambulance",
-      "pred": "minibus",
-      "confidence": 0.6503,
-      "correct": false,
+      "pred": "ambulance",
+      "confidence": 1.0,
+      "correct": true,
       "scores": {
-        "ambulance": 0.3497,
+        "ambulance": 1.0,
         "bus": 0.0,
         "car": 0.0,
         "fire_truck": 0.0,
-        "minibus": 0.6503,
+        "minibus": 0.0,
         "police": 0.0
       }
     },
@@ -598,14 +598,14 @@
       "path": "D:/vehicle_refs\\ambulance\\01328XEA_2026-01-13_10_14_46_4178ee19-4237-45bd-b26f-50210b49af12.jpg",
       "true": "ambulance",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.6587,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.6587,
         "fire_truck": 0.0,
-        "minibus": 0.0,
+        "minibus": 0.3413,
         "police": 0.0
       }
     },
@@ -613,27 +613,27 @@
       "path": "D:/vehicle_refs\\ambulance\\01334BGA_2026-01-23_16_43_39_429ca49d-78ed-46d3-9510-770f717c1d22.jpg",
       "true": "ambulance",
       "pred": "ambulance",
-      "confidence": 0.7681,
+      "confidence": 0.5289,
       "correct": true,
       "scores": {
-        "ambulance": 0.7681,
+        "ambulance": 0.5289,
         "bus": 0.0,
-        "car": 0.159,
+        "car": 0.3871,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0729
+        "police": 0.084
       }
     },
     {
       "path": "D:/vehicle_refs\\ambulance\\01349WCA_2025-09-02_16_09_21_fe8835e0-7890-473e-afe2-fdb6cb3fb16b.jpg",
       "true": "ambulance",
-      "pred": "ambulance",
-      "confidence": 0.7625,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.7709,
+      "correct": false,
       "scores": {
-        "ambulance": 0.7625,
+        "ambulance": 0.2291,
         "bus": 0.0,
-        "car": 0.2375,
+        "car": 0.7709,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -642,13 +642,13 @@
     {
       "path": "D:/vehicle_refs\\ambulance\\01357XEA_2026-01-19_09_09_28_440b4b03-107b-4f59-9320-f190316ee149.jpg",
       "true": "ambulance",
-      "pred": "car",
-      "confidence": 0.5264,
-      "correct": false,
+      "pred": "ambulance",
+      "confidence": 0.7318,
+      "correct": true,
       "scores": {
-        "ambulance": 0.4736,
+        "ambulance": 0.7318,
         "bus": 0.0,
-        "car": 0.5264,
+        "car": 0.2682,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -673,12 +673,12 @@
       "path": "D:/vehicle_refs\\ambulance\\01568DHA_2026-01-20_07_49_00_f459bda6-5837-415c-8e85-8ff201f45326.jpg",
       "true": "ambulance",
       "pred": "car",
-      "confidence": 0.7831,
+      "confidence": 0.834,
       "correct": false,
       "scores": {
-        "ambulance": 0.2169,
+        "ambulance": 0.166,
         "bus": 0.0,
-        "car": 0.7831,
+        "car": 0.834,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -688,12 +688,12 @@
       "path": "D:/vehicle_refs\\ambulance\\01M007584_2025-10-07_09_28_02_f0d4dc1f-0303-45c9-85f3-0505538cf2d8.jpg",
       "true": "ambulance",
       "pred": "ambulance",
-      "confidence": 1.0,
+      "confidence": 0.8321,
       "correct": true,
       "scores": {
-        "ambulance": 1.0,
+        "ambulance": 0.8321,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.1679,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -718,12 +718,12 @@
       "path": "D:/vehicle_refs\\ambulance\\40302TBA_6428e549-24a1-4754-a3ae-b54e584b0398.jpg",
       "true": "ambulance",
       "pred": "ambulance",
-      "confidence": 1.0,
+      "confidence": 0.9785,
       "correct": true,
       "scores": {
-        "ambulance": 1.0,
+        "ambulance": 0.9785,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.0215,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -763,12 +763,12 @@
       "path": "D:/vehicle_refs\\ambulance\\60935ABA_2025-10-06_22_54_02_8d44d9a1-f48b-4e67-9cbf-fc57efb17c8c.jpg",
       "true": "ambulance",
       "pred": "ambulance",
-      "confidence": 0.8083,
+      "confidence": 0.861,
       "correct": true,
       "scores": {
-        "ambulance": 0.8083,
+        "ambulance": 0.861,
         "bus": 0.0,
-        "car": 0.1917,
+        "car": 0.139,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -808,12 +808,12 @@
       "path": "D:/vehicle_refs\\ambulance\\95085STY_f2b9f0c9-07a6-45f2-a2d7-86d55a5c2bd1.jpg",
       "true": "ambulance",
       "pred": "ambulance",
-      "confidence": 1.0,
+      "confidence": 0.9289,
       "correct": true,
       "scores": {
-        "ambulance": 1.0,
+        "ambulance": 0.9289,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.0711,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -823,12 +823,12 @@
       "path": "D:/vehicle_refs\\ambulance\\95099STY_602b35cb-3598-45d5-9c15-3e44e9a96d27.jpg",
       "true": "ambulance",
       "pred": "car",
-      "confidence": 0.9278,
+      "confidence": 0.8075,
       "correct": false,
       "scores": {
-        "ambulance": 0.0722,
+        "ambulance": 0.1925,
         "bus": 0.0,
-        "car": 0.9278,
+        "car": 0.8075,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -1543,13 +1543,13 @@
       "path": "D:/vehicle_refs\\bus\\image (1).jpg",
       "true": "bus",
       "pred": "bus",
-      "confidence": 1.0,
+      "confidence": 0.8885,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
-        "bus": 1.0,
+        "bus": 0.8885,
         "car": 0.0,
-        "fire_truck": 0.0,
+        "fire_truck": 0.1115,
         "minibus": 0.0,
         "police": 0.0
       }
@@ -1633,44 +1633,44 @@
       "path": "D:/vehicle_refs\\car\\00F375GB_2026-01-17_08_37_34_e6b7286c-6d31-4291-894d-ef7dd663864f.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.859,
+      "confidence": 0.7869,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.859,
+        "car": 0.7869,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.141
+        "police": 0.2131
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\00P319YA_2026-01-05_18_59_56_b621df54-3280-47b5-8649-0ce029bf6ae0.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.7673,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.7673,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.2327
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\00R229FB_2026-01-10_11_23_30_0103aaf3-eacd-40d2-9017-0f2f14022726.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9387,
+      "confidence": 0.7761,
       "correct": true,
       "scores": {
-        "ambulance": 0.0613,
+        "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9387,
+        "car": 0.7761,
         "fire_truck": 0.0,
-        "minibus": 0.0,
+        "minibus": 0.2239,
         "police": 0.0
       }
     },
@@ -1678,15 +1678,15 @@
       "path": "D:/vehicle_refs\\car\\00T793AB_2026-01-19_13_07_38_52620379-dadd-48c5-a452-269a13caea72.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.852,
+      "confidence": 0.8257,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.852,
+        "car": 0.8257,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.148
+        "police": 0.1743
       }
     },
     {
@@ -1723,30 +1723,30 @@
       "path": "D:/vehicle_refs\\car\\01027EMA_2026-01-06_18_24_35_0223544f-7e58-47a5-9dc0-4a97687deb26.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.7588,
+      "confidence": 0.8604,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7588,
+        "car": 0.8604,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2412
+        "police": 0.1396
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01110VSF_2026-01-15_22_30_53_258d7a49-adf7-4f30-8ba9-2c98c954367f.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.6001,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.841,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.6001,
+        "car": 0.159,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.3999
+        "police": 0.841
       }
     },
     {
@@ -1768,15 +1768,15 @@
       "path": "D:/vehicle_refs\\car\\01125FNA_2026-01-21_11_03_53_97e175bf-0212-469e-8d58-cc4d764b2cf0.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.9203,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.9203,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.0797
       }
     },
     {
@@ -1797,76 +1797,76 @@
     {
       "path": "D:/vehicle_refs\\car\\01132QFA_2026-01-10_18_22_51_382368cd-3949-49ae-8ec3-3cee1e90873d.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.7252,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.2748,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.7252
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01140TTF_2026-01-23_11_25_49_02fa866f-56cc-480d-8ee9-710999eeb0c0.jpg",
       "true": "car",
-      "pred": "police",
-      "confidence": 0.6421,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.7639,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.3579,
+        "car": 0.7639,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.6421
+        "police": 0.2361
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01163WJA_2026-01-09_09_28_02_902fc2ad-bdeb-44fa-9bb9-03dbeb55c6db.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.9157,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.6641,
+      "correct": false,
       "scores": {
-        "ambulance": 0.0843,
+        "ambulance": 0.2551,
         "bus": 0.0,
-        "car": 0.9157,
+        "car": 0.0,
         "fire_truck": 0.0,
-        "minibus": 0.0,
-        "police": 0.0
+        "minibus": 0.0808,
+        "police": 0.6641
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01171KJA_2026-01-22_09_25_08_12df21b9-7fff-4776-ad62-674c3e3efac6.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.5496,
+      "confidence": 0.6393,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.5496,
+        "car": 0.6393,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.4504
+        "police": 0.3607
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01189PLA_2026-01-20_10_03_36_a73054af-56b2-427b-bfc3-8f1c8e4a1fdf.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.7705,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.8482,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7705,
+        "car": 0.1518,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2295
+        "police": 0.8482
       }
     },
     {
@@ -1888,15 +1888,15 @@
       "path": "D:/vehicle_refs\\car\\01202ZEA_2026-01-19_14_10_39_9eed359a-cc14-4f57-a69e-a05ff4032b06.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.66,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.66,
+        "car": 1.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.34
+        "police": 0.0
       }
     },
     {
@@ -1933,79 +1933,94 @@
       "path": "D:/vehicle_refs\\car\\01221ZLA_2026-01-08_14_06_37_8191b91b-fb8b-4dd3-a47a-66cfe2a68865.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.5704,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.5704,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.4296
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01225THA_2026-01-22_21_46_03_dbd4eb64-5f3d-4166-86b0-b55cd4bdaf8a.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.8245,
+      "confidence": 0.5056,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.8245,
+        "car": 0.5056,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.1755
+        "police": 0.4944
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01230ULA_2026-01-22_15_28_08_577475db-730b-435e-8caa-d2ca7def3c6b.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.7372,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.7546,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7372,
+        "car": 0.2454,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2628
+        "police": 0.7546
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01234NDA_2026-01-18_15_29_53_6c37d51b-8610-4f67-8fc8-fcf9f4d4a89c.jpg",
       "true": "car",
-      "pred": "car",
+      "pred": "police",
       "confidence": 1.0,
-      "correct": true,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 1.0
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01235VSC_2026-01-21_17_10_09_c09b2b93-cd89-4eef-a88a-43c1c5cd85ea.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9194,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9194,
+        "car": 1.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0806
+        "police": 0.0
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01264PSF_2026-01-08_14_51_00_1c450073-6bf3-44e1-b9a9-192667324773.jpg",
+      "true": "car",
+      "pred": "car",
+      "confidence": 0.9216,
+      "correct": true,
+      "scores": {
+        "ambulance": 0.0,
+        "bus": 0.0,
+        "car": 0.9216,
+        "fire_truck": 0.0,
+        "minibus": 0.0,
+        "police": 0.0784
+      }
+    },
+    {
+      "path": "D:/vehicle_refs\\car\\01292QCA_2025-09-10_15_17_24_83d5265f-6064-4d01-886c-817ac2688dda.jpg",
       "true": "car",
       "pred": "car",
       "confidence": 1.0,
@@ -2020,30 +2035,15 @@
       }
     },
     {
-      "path": "D:/vehicle_refs\\car\\01292QCA_2025-09-10_15_17_24_83d5265f-6064-4d01-886c-817ac2688dda.jpg",
-      "true": "car",
-      "pred": "police",
-      "confidence": 0.5168,
-      "correct": false,
-      "scores": {
-        "ambulance": 0.0,
-        "bus": 0.0,
-        "car": 0.4832,
-        "fire_truck": 0.0,
-        "minibus": 0.0,
-        "police": 0.5168
-      }
-    },
-    {
       "path": "D:/vehicle_refs\\car\\01310LGA_2026-01-08_14_03_16_406c6290-7e16-48cc-8414-000d5b46a9b6.jpg",
       "true": "car",
       "pred": "ambulance",
-      "confidence": 0.8272,
+      "confidence": 0.8834,
       "correct": false,
       "scores": {
-        "ambulance": 0.8272,
+        "ambulance": 0.8834,
         "bus": 0.0,
-        "car": 0.1728,
+        "car": 0.1166,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -2083,27 +2083,27 @@
       "path": "D:/vehicle_refs\\car\\01439MJA_2026-01-11_17_59_10_7ab37ca8-c181-437f-8d9a-c0bc75613555.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.7164,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.7164,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.2836
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01463T_2025-09-03_10_40_01_6179946b-514a-4425-beaa-7148a1ae7f9e.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9174,
+      "confidence": 0.9071,
       "correct": true,
       "scores": {
-        "ambulance": 0.0826,
+        "ambulance": 0.0929,
         "bus": 0.0,
-        "car": 0.9174,
+        "car": 0.9071,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -2127,13 +2127,13 @@
     {
       "path": "D:/vehicle_refs\\car\\01518MMA_2026-01-08_13_46_50_96375af2-805f-45bf-b784-5c095aee5990.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.6732,
-      "correct": true,
+      "pred": "ambulance",
+      "confidence": 0.545,
+      "correct": false,
       "scores": {
-        "ambulance": 0.3268,
+        "ambulance": 0.545,
         "bus": 0.0,
-        "car": 0.6732,
+        "car": 0.455,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -2143,15 +2143,15 @@
       "path": "D:/vehicle_refs\\car\\01700WBA_2026-01-14_18_12_33_758e11c0-2e33-4393-b65a-023aea279e6a.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.8556,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.8556,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.1444
       }
     },
     {
@@ -2172,16 +2172,16 @@
     {
       "path": "D:/vehicle_refs\\car\\01741QLA_2026-01-18_15_00_15_083c18c4-6651-480f-9938-2109237b3940.jpg",
       "true": "car",
-      "pred": "police",
-      "confidence": 0.7689,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.778,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.2311,
+        "car": 0.778,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.7689
+        "police": 0.222
       }
     },
     {
@@ -2247,15 +2247,15 @@
     {
       "path": "D:/vehicle_refs\\car\\01792RJA_2026-01-16_11_52_31_6031f631-3359-4dc0-8fd8-4e430e411216.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "ambulance",
+      "confidence": 0.5597,
+      "correct": false,
       "scores": {
-        "ambulance": 0.0,
+        "ambulance": 0.5597,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.3605,
         "fire_truck": 0.0,
-        "minibus": 0.0,
+        "minibus": 0.0799,
         "police": 0.0
       }
     },
@@ -2278,14 +2278,14 @@
       "path": "D:/vehicle_refs\\car\\01888DDA_e01fd646-5c3a-4dbd-9229-580eeac9314a.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9212,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9212,
+        "car": 1.0,
         "fire_truck": 0.0,
-        "minibus": 0.0788,
+        "minibus": 0.0,
         "police": 0.0
       }
     },
@@ -2308,12 +2308,12 @@
       "path": "D:/vehicle_refs\\car\\01913ANA_2026-01-01_19_31_17_96000f6a-3231-4569-9cab-501a4b2ba340.jpg",
       "true": "car",
       "pred": "ambulance",
-      "confidence": 0.8991,
+      "confidence": 0.7472,
       "correct": false,
       "scores": {
-        "ambulance": 0.8991,
+        "ambulance": 0.7472,
         "bus": 0.0,
-        "car": 0.1009,
+        "car": 0.2528,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -2367,20 +2367,50 @@
     {
       "path": "D:/vehicle_refs\\car\\01A008PA_2026-01-18_16_20_12_0e9894b1-8de0-436b-adcf-645b4e8b8539.jpg",
       "true": "car",
-      "pred": "police",
-      "confidence": 0.8218,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.5549,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.1782,
+        "car": 0.5549,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.8218
+        "police": 0.4451
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01A009LB_2026-01-18_22_43_38_8cdf7405-a87a-405b-b164-2a07c5b4bee7.jpg",
+      "true": "car",
+      "pred": "car",
+      "confidence": 0.7787,
+      "correct": true,
+      "scores": {
+        "ambulance": 0.0,
+        "bus": 0.0,
+        "car": 0.7787,
+        "fire_truck": 0.0,
+        "minibus": 0.0,
+        "police": 0.2213
+      }
+    },
+    {
+      "path": "D:/vehicle_refs\\car\\01A025LA_2026-01-08_10_12_28_11b89e88-1035-411a-8fc1-045367565060.jpg",
+      "true": "car",
+      "pred": "police",
+      "confidence": 0.6216,
+      "correct": false,
+      "scores": {
+        "ambulance": 0.0,
+        "bus": 0.0,
+        "car": 0.3784,
+        "fire_truck": 0.0,
+        "minibus": 0.0,
+        "police": 0.6216
+      }
+    },
+    {
+      "path": "D:/vehicle_refs\\car\\01A042YC_2026-01-14_11_13_25_2eb14ae3-1a9b-436b-ab9f-57fd182420f2.jpg",
       "true": "car",
       "pred": "car",
       "confidence": 1.0,
@@ -2395,48 +2425,18 @@
       }
     },
     {
-      "path": "D:/vehicle_refs\\car\\01A025LA_2026-01-08_10_12_28_11b89e88-1035-411a-8fc1-045367565060.jpg",
-      "true": "car",
-      "pred": "car",
-      "confidence": 0.7635,
-      "correct": true,
-      "scores": {
-        "ambulance": 0.0,
-        "bus": 0.0,
-        "car": 0.7635,
-        "fire_truck": 0.0,
-        "minibus": 0.0,
-        "police": 0.2365
-      }
-    },
-    {
-      "path": "D:/vehicle_refs\\car\\01A042YC_2026-01-14_11_13_25_2eb14ae3-1a9b-436b-ab9f-57fd182420f2.jpg",
-      "true": "car",
-      "pred": "car",
-      "confidence": 0.7512,
-      "correct": true,
-      "scores": {
-        "ambulance": 0.0,
-        "bus": 0.0,
-        "car": 0.7512,
-        "fire_truck": 0.0,
-        "minibus": 0.0,
-        "police": 0.2488
-      }
-    },
-    {
       "path": "D:/vehicle_refs\\car\\01A046SC_2026-01-20_19_27_35_26be8b4d-6b1d-41a9-96a1-509c1726d0ab.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.8587,
+      "confidence": 0.6873,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.8587,
+        "car": 0.6873,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.1413
+        "police": 0.3127
       }
     },
     {
@@ -2458,45 +2458,45 @@
       "path": "D:/vehicle_refs\\car\\01A072OC_2026-01-16_18_26_59_f43ef022-18e0-4871-9cbd-a30cb4e3e407.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.8366,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.8366,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.1634
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01A080ZB_2026-01-15_13_34_10_71f51fba-a332-4c98-b0cc-e8dcd170a035.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.8688,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.7287,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.8688,
+        "car": 0.2713,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.1312
+        "police": 0.7287
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01A181VB_2026-01-13_20_37_03_3d7a3ac3-1e08-44c0-b272-eb2ffb421b04.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.8564,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.8564,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.1436
       }
     },
     {
@@ -2517,16 +2517,16 @@
     {
       "path": "D:/vehicle_refs\\car\\01A211BB_2026-01-19_12_55_16_8158512d-d0f0-4d44-9db8-971be5b4096c.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.7251,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.2749,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.7251
       }
     },
     {
@@ -2562,46 +2562,46 @@
     {
       "path": "D:/vehicle_refs\\car\\01B342TC_2025-10-07_11_09_10_8ead1183-d434-4c34-bdc5-e262d294b558.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.7913,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.7529,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7913,
+        "car": 0.2471,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2087
+        "police": 0.7529
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01B666AB_2026-01-23_12_57_36_8822213b-e804-49fb-b1d7-1eef45807585.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 0.8554,
+      "confidence": 0.8335,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.1446,
+        "car": 0.1665,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.8554
+        "police": 0.8335
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01B883UA_2026-01-20_22_41_46_3432c430-530f-44cb-9c43-44706bfd2e87.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.901,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.099,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.901
       }
     },
     {
@@ -2622,43 +2622,43 @@
     {
       "path": "D:/vehicle_refs\\car\\01E530NC_2026-01-17_08_28_31_2456f87b-d41d-4765-bf7f-0a10df624692.jpg",
       "true": "car",
-      "pred": "police",
-      "confidence": 0.5539,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.8316,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.4461,
+        "car": 0.8316,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.5539
+        "police": 0.1684
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01F077BB_2026-01-21_21_49_30_0cae76e6-a744-47f4-8627-700bbfb92519.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 0.6551,
+      "confidence": 0.5548,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.3449,
+        "car": 0.4452,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.6551
+        "police": 0.5548
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01F189AD_2026-01-09_14_57_05_0e611da0-d354-4e61-a52e-cd11acd77df7.jpg",
       "true": "car",
       "pred": "ambulance",
-      "confidence": 0.5781,
+      "confidence": 0.6153,
       "correct": false,
       "scores": {
-        "ambulance": 0.5781,
+        "ambulance": 0.6153,
         "bus": 0.0,
-        "car": 0.4219,
+        "car": 0.3847,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -2668,45 +2668,45 @@
       "path": "D:/vehicle_refs\\car\\01F296KB_2026-01-08_16_46_50_0d3b23b2-ad37-4d9c-a4f9-08903b752146.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 0.6254,
+      "confidence": 1.0,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.3746,
+        "car": 0.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.6254
+        "police": 1.0
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01F326YA_2026-01-22_11_54_59_c2ae559f-66b6-4b87-8b07-e0ccdf967122.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.537,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.5638,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.537,
+        "car": 0.4362,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.463
+        "police": 0.5638
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01G808ZA_2025-09-09_15_20_05_3c7b9ca3-7aee-4584-ab54-9676a9f6b708.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.6656,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.3344,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.6656
       }
     },
     {
@@ -2728,12 +2728,12 @@
       "path": "D:/vehicle_refs\\car\\01H302AD_2026-01-20_10_51_29_41747547-4e62-4b45-ab95-af2836b0522e.jpg",
       "true": "car",
       "pred": "ambulance",
-      "confidence": 0.5643,
+      "confidence": 0.8093,
       "correct": false,
       "scores": {
-        "ambulance": 0.5643,
+        "ambulance": 0.8093,
         "bus": 0.0,
-        "car": 0.4357,
+        "car": 0.1907,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -2758,30 +2758,30 @@
       "path": "D:/vehicle_refs\\car\\01J359TA_2026-01-10_06_53_29_83474c37-b54a-4145-b2e4-eaa30c99c8de.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 0.7225,
+      "confidence": 0.7404,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.2775,
+        "car": 0.2596,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.7225
+        "police": 0.7404
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01J726NA_2025-09-03_19_37_11_382717b2-bb62-4401-8ce4-e198644ad9a4.jpg",
       "true": "car",
-      "pred": "police",
-      "confidence": 0.9228,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.8388,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0772,
+        "car": 0.8388,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.9228
+        "police": 0.1612
       }
     },
     {
@@ -2818,15 +2818,15 @@
       "path": "D:/vehicle_refs\\car\\01K637ZC_2025-09-15_13_32_45_c3a80e6d-4a0d-40b2-a2aa-de4da2cdd6b7.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9193,
+      "confidence": 0.6412,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9193,
+        "car": 0.6412,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0807
+        "police": 0.3588
       }
     },
     {
@@ -2848,15 +2848,15 @@
       "path": "D:/vehicle_refs\\car\\01M132IC_2026-01-18_22_51_58_7f1dd4e8-b7ce-40fe-b2ee-f5e2b872f67f.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 0.5295,
+      "confidence": 0.9262,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.4705,
+        "car": 0.0738,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.5295
+        "police": 0.9262
       }
     },
     {
@@ -2878,30 +2878,30 @@
       "path": "D:/vehicle_refs\\car\\01M873OB_2025-09-09_15_02_06_f3f667e7-66df-496c-a977-49d22eb6a747.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9013,
+      "confidence": 0.8265,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9013,
+        "car": 0.8265,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0987
+        "police": 0.1735
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01O172AD_2026-01-18_16_37_00_256ec346-5ed4-4f76-8f2e-0203fa95801a.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9268,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9268,
+        "car": 1.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0732
+        "police": 0.0
       }
     },
     {
@@ -2923,44 +2923,44 @@
       "path": "D:/vehicle_refs\\car\\01Q980OC_2026-01-18_09_06_38_49baa5af-22ef-4752-b5b0-8903b0e5c6e4.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 0.5847,
+      "confidence": 0.881,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.4153,
+        "car": 0.119,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.5847
+        "police": 0.881
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01V100DD_2026-01-03_22_24_45_eed0bb45-2498-4477-81c7-a8bded3016fa.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.913,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.913,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.087
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\01X586SC_dc7f2115-5a52-44ef-9df0-399d7976aa5b.jpg",
       "true": "car",
-      "pred": "minibus",
-      "confidence": 0.7794,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.5933,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.2206,
+        "car": 0.5933,
         "fire_truck": 0.0,
-        "minibus": 0.7794,
+        "minibus": 0.4067,
         "police": 0.0
       }
     },
@@ -2968,15 +2968,15 @@
       "path": "D:/vehicle_refs\\car\\01X645GC_2026-01-20_22_18_07_ef876feb-bd8b-4f60-bbeb-2e0352f991d9.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.6381,
+      "confidence": 0.7531,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.6381,
+        "car": 0.7531,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.3619
+        "police": 0.2469
       }
     },
     {
@@ -3027,16 +3027,16 @@
     {
       "path": "D:/vehicle_refs\\car\\0AA371OA_2026-01-19_20_24_54_b22bcf83-e0d9-4eaf-bacc-be9680154a8c.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.7461,
-      "correct": true,
+      "pred": "police",
+      "confidence": 1.0,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7461,
+        "car": 0.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2539
+        "police": 1.0
       }
     },
     {
@@ -3088,14 +3088,14 @@
       "path": "D:/vehicle_refs\\car\\10B690NB_f38984a7-6d93-4306-a354-916929793741.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.7975,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.7975,
         "fire_truck": 0.0,
-        "minibus": 0.0,
+        "minibus": 0.2025,
         "police": 0.0
       }
     },
@@ -3103,30 +3103,30 @@
       "path": "D:/vehicle_refs\\car\\10B708JB_34e71f2e-4b83-4e59-b066-c1f778776650.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.5041,
+      "confidence": 0.7104,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.5041,
+        "car": 0.7104,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.4959
+        "police": 0.2896
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\10B715MB_2026-01-13_21_38_57_96f8c226-37ee-4bb5-bd6d-94b0ac565a97.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.6151,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.6151,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.3849
       }
     },
     {
@@ -3148,12 +3148,12 @@
       "path": "D:/vehicle_refs\\car\\10S667XA_3bc744d6-ffd8-4b4b-a19b-dd9d2e7cb310.jpg",
       "true": "car",
       "pred": "ambulance",
-      "confidence": 0.7953,
+      "confidence": 0.866,
       "correct": false,
       "scores": {
-        "ambulance": 0.7953,
+        "ambulance": 0.866,
         "bus": 0.0,
-        "car": 0.2047,
+        "car": 0.134,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -3193,45 +3193,45 @@
       "path": "D:/vehicle_refs\\car\\25J196GA_2025-09-16_11_08_43_ffa0a99a-54f9-4fa6-af02-26267603eec2.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.7947,
+      "confidence": 0.6977,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7947,
+        "car": 0.6977,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2053
+        "police": 0.3023
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\25J196GA_2026-01-23_09_11_10_ee74353f-6f50-4ebe-8de6-4e8802f1a747.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.5811,
+      "confidence": 0.635,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.5811,
+        "car": 0.635,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.4189
+        "police": 0.365
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\25N627HA_2025-09-16_12_36_52_64e53c05-119f-42ec-9953-e6a925872e20.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.9111,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.9111,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.0889
       }
     },
     {
@@ -3267,16 +3267,16 @@
     {
       "path": "D:/vehicle_refs\\car\\30C965PB_2025-09-09_12_43_32_7eae5156-0be4-4f7f-8bd7-da67c8c54920.jpg",
       "true": "car",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.7654,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.7654,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.2346
       }
     },
     {
@@ -3327,14 +3327,14 @@
     {
       "path": "D:/vehicle_refs\\car\\40811LBA_2026-01-13_11_22_55_1364b672-e194-4ebc-95c9-dd7abde64a79.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.9129,
-      "correct": true,
+      "pred": "fire_truck",
+      "confidence": 1.0,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9129,
-        "fire_truck": 0.0871,
+        "car": 0.0,
+        "fire_truck": 1.0,
         "minibus": 0.0,
         "police": 0.0
       }
@@ -3357,16 +3357,16 @@
     {
       "path": "D:/vehicle_refs\\car\\40B796MB_2025-09-15_10_25_49_62c2f8a9-784a-4a53-83a3-7257faf2f4f2.jpg",
       "true": "car",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.5638,
+      "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.5638,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.4362
       }
     },
     {
@@ -3417,16 +3417,16 @@
     {
       "path": "D:/vehicle_refs\\car\\40P277RB_2026-01-12_13_35_15_6d88bfe3-7699-4095-ab78-222a2f622c00.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.6691,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.3309,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.6691
       }
     },
     {
@@ -3448,13 +3448,13 @@
       "path": "D:/vehicle_refs\\car\\60J043GB_2026-01-20_13_43_16_a938d387-b9e7-41fa-957b-44cc8609d1fe.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.8637,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
-        "fire_truck": 0.0,
+        "car": 0.8637,
+        "fire_truck": 0.1363,
         "minibus": 0.0,
         "police": 0.0
       }
@@ -3507,13 +3507,13 @@
     {
       "path": "D:/vehicle_refs\\car\\75693CBA_128de2c9-902a-418d-9e3f-513cc34eadf3.jpg",
       "true": "car",
-      "pred": "ambulance",
-      "confidence": 0.5912,
-      "correct": false,
+      "pred": "car",
+      "confidence": 0.8166,
+      "correct": true,
       "scores": {
-        "ambulance": 0.5912,
+        "ambulance": 0.1834,
         "bus": 0.0,
-        "car": 0.4088,
+        "car": 0.8166,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -3522,31 +3522,31 @@
     {
       "path": "D:/vehicle_refs\\car\\75E683UA_2025-09-09_12_22_22_86e2c061-e480-4551-bd2b-8081dd107c32.jpg",
       "true": "car",
-      "pred": "car",
-      "confidence": 0.7667,
-      "correct": true,
+      "pred": "police",
+      "confidence": 0.5161,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7667,
+        "car": 0.4839,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2333
+        "police": 0.5161
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\75L164NA_2025-10-06_19_05_06_49f2d722-1236-4dfa-b987-0c7acd90be2f.jpg",
       "true": "car",
       "pred": "ambulance",
-      "confidence": 0.9312,
+      "confidence": 0.6859,
       "correct": false,
       "scores": {
-        "ambulance": 0.9312,
+        "ambulance": 0.6859,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.3141,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0688
+        "police": 0.0
       }
     },
     {
@@ -3568,30 +3568,30 @@
       "path": "D:/vehicle_refs\\car\\90F678VA_2025-10-06_16_01_17_de98c56d-c8d4-475f-9ecb-41742cece121.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.8609,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.8609,
+        "car": 1.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.1391
+        "police": 0.0
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\90S358ZA_2025-10-06_15_55_32_4bb0ce1d-f96e-479a-8e93-a69f6152eb25.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.5729,
+      "confidence": 0.8418,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.5729,
+        "car": 0.8418,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.4271
+        "police": 0.1582
       }
     },
     {
@@ -3628,19 +3628,49 @@
       "path": "D:/vehicle_refs\\car\\95D678HA_2026-01-19_17_38_09_091b9faa-78ec-4bd9-b017-514c8067bb49.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.6444,
+      "confidence": 0.5848,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.6444,
+        "car": 0.5848,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.3556
+        "police": 0.4152
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\95F467NA_2026-01-06_16_13_23_483f0140-ed4a-43f9-8ee3-92217588732d.jpg",
+      "true": "car",
+      "pred": "police",
+      "confidence": 0.919,
+      "correct": false,
+      "scores": {
+        "ambulance": 0.0,
+        "bus": 0.0,
+        "car": 0.081,
+        "fire_truck": 0.0,
+        "minibus": 0.0,
+        "police": 0.919
+      }
+    },
+    {
+      "path": "D:/vehicle_refs\\car\\95H168PA_2026-01-14_12_51_13_bf10d835-84db-40e9-b696-c97b84f58008.jpg",
+      "true": "car",
+      "pred": "police",
+      "confidence": 0.7498,
+      "correct": false,
+      "scores": {
+        "ambulance": 0.0,
+        "bus": 0.0,
+        "car": 0.2502,
+        "fire_truck": 0.0,
+        "minibus": 0.0,
+        "police": 0.7498
+      }
+    },
+    {
+      "path": "D:/vehicle_refs\\car\\95M202JA_2025-09-16_12_34_36_f81fd31a-421c-48e0-9915-a6632a7a8d2e.jpg",
       "true": "car",
       "pred": "police",
       "confidence": 1.0,
@@ -3655,92 +3685,62 @@
       }
     },
     {
-      "path": "D:/vehicle_refs\\car\\95H168PA_2026-01-14_12_51_13_bf10d835-84db-40e9-b696-c97b84f58008.jpg",
-      "true": "car",
-      "pred": "police",
-      "confidence": 0.7634,
-      "correct": false,
-      "scores": {
-        "ambulance": 0.0,
-        "bus": 0.0,
-        "car": 0.2366,
-        "fire_truck": 0.0,
-        "minibus": 0.0,
-        "police": 0.7634
-      }
-    },
-    {
-      "path": "D:/vehicle_refs\\car\\95M202JA_2025-09-16_12_34_36_f81fd31a-421c-48e0-9915-a6632a7a8d2e.jpg",
-      "true": "car",
-      "pred": "police",
-      "confidence": 0.917,
-      "correct": false,
-      "scores": {
-        "ambulance": 0.0,
-        "bus": 0.0,
-        "car": 0.083,
-        "fire_truck": 0.0,
-        "minibus": 0.0,
-        "police": 0.917
-      }
-    },
-    {
       "path": "D:/vehicle_refs\\car\\95O126GA_2026-01-14_11_08_42_6410e474-551c-41ca-bf41-ad8749b00773.jpg",
       "true": "car",
       "pred": "police",
-      "confidence": 0.5652,
+      "confidence": 1.0,
       "correct": false,
       "scores": {
-        "ambulance": 0.4348,
+        "ambulance": 0.0,
         "bus": 0.0,
         "car": 0.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.5652
+        "police": 1.0
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\95X136MA_2025-09-16_10_53_57_8c048c72-c6b6-4307-806e-28c77ec419df.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.9078,
+      "confidence": 0.9711,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.9078,
+        "car": 0.9711,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0922
+        "police": 0.0289
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\95X136MA_2025-09-16_10_53_57_fe8eeab9-a6e7-4222-8b85-03a5e8ef483d.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.8974,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.8974,
+        "car": 1.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.1026
+        "police": 0.0
       }
     },
     {
       "path": "D:/vehicle_refs\\car\\image_2N9gv4e.jpg",
       "true": "car",
       "pred": "ambulance",
-      "confidence": 0.6618,
+      "confidence": 0.4797,
       "correct": false,
       "scores": {
-        "ambulance": 0.6618,
+        "ambulance": 0.4797,
         "bus": 0.0,
-        "car": 0.3382,
+        "car": 0.4294,
         "fire_truck": 0.0,
-        "minibus": 0.0,
+        "minibus": 0.0909,
         "police": 0.0
       }
     },
@@ -3763,15 +3763,15 @@
       "path": "D:/vehicle_refs\\car\\image_RL4RrcM.jpg",
       "true": "car",
       "pred": "car",
-      "confidence": 0.8738,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.8738,
+        "car": 1.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.1262
+        "police": 0.0
       }
     },
     {
@@ -3823,13 +3823,13 @@
       "path": "D:/vehicle_refs\\fire_truck\\2098.jpeg",
       "true": "fire_truck",
       "pred": "fire_truck",
-      "confidence": 0.8864,
+      "confidence": 0.7993,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.1136,
-        "fire_truck": 0.8864,
+        "car": 0.2007,
+        "fire_truck": 0.7993,
         "minibus": 0.0,
         "police": 0.0
       }
@@ -3852,14 +3852,14 @@
     {
       "path": "D:/vehicle_refs\\fire_truck\\40345FVV_2026-01-05_16_57_45_e0fa3267-a35a-4f37-9375-1ce71f9035ef.jpg",
       "true": "fire_truck",
-      "pred": "fire_truck",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.7558,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
-        "fire_truck": 1.0,
+        "car": 0.7558,
+        "fire_truck": 0.2442,
         "minibus": 0.0,
         "police": 0.0
       }
@@ -4033,14 +4033,14 @@
       "path": "D:/vehicle_refs\\minibus\\01193STY_2025-10-07_13_46_45_8a3860df-48a1-44c0-b5bc-b7aafedeae30.jpg",
       "true": "minibus",
       "pred": "car",
-      "confidence": 0.622,
+      "confidence": 0.4678,
       "correct": false,
       "scores": {
-        "ambulance": 0.0,
+        "ambulance": 0.0858,
         "bus": 0.0,
-        "car": 0.622,
+        "car": 0.4678,
         "fire_truck": 0.0,
-        "minibus": 0.378,
+        "minibus": 0.4464,
         "police": 0.0
       }
     },
@@ -4303,12 +4303,12 @@
       "path": "D:/vehicle_refs\\minibus\\01O314BC_78c5067a-8722-4644-aca8-b1bc183e7d5f_cropped.jpg",
       "true": "minibus",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.9358,
       "correct": false,
       "scores": {
-        "ambulance": 0.0,
+        "ambulance": 0.0642,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.9358,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -4423,12 +4423,12 @@
       "path": "D:/vehicle_refs\\minibus\\10Y134AB_2025-09-02_17_27_04_64c488d8-d975-447a-aaf8-73f62be6b7e8.jpg",
       "true": "minibus",
       "pred": "ambulance",
-      "confidence": 1.0,
+      "confidence": 0.8401,
       "correct": false,
       "scores": {
-        "ambulance": 1.0,
+        "ambulance": 0.8401,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.1599,
         "fire_truck": 0.0,
         "minibus": 0.0,
         "police": 0.0
@@ -4542,15 +4542,15 @@
     {
       "path": "D:/vehicle_refs\\minibus\\95E979RA_268d5d9f-7a39-4f6f-ba66-96116f20bfb1.jpg",
       "true": "minibus",
-      "pred": "ambulance",
-      "confidence": 0.7539,
+      "pred": "car",
+      "confidence": 0.759,
       "correct": false,
       "scores": {
-        "ambulance": 0.7539,
+        "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.759,
         "fire_truck": 0.0,
-        "minibus": 0.2461,
+        "minibus": 0.241,
         "police": 0.0
       }
     },
@@ -4737,16 +4737,16 @@
     {
       "path": "D:/vehicle_refs\\police\\01174VSD_2026-01-21_09_50_46_5c911183-9c97-45db-a2dc-b25087da4970.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.5453,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.5453,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.4547
       }
     },
     {
@@ -4767,61 +4767,61 @@
     {
       "path": "D:/vehicle_refs\\police\\01195VSG_2025-09-03_11_10_27_7acff152-f0e0-4ab8-b851-19bd7fb18cb6.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.58,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.58,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.42
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01223QDA_2026-01-18_15_25_51_0894fc5e-d95c-41d1-8bb6-f81477d44129.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 0.5974,
-      "correct": true,
+      "pred": "ambulance",
+      "confidence": 0.7576,
+      "correct": false,
       "scores": {
-        "ambulance": 0.4026,
+        "ambulance": 0.7576,
         "bus": 0.0,
         "car": 0.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.5974
+        "police": 0.2424
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01237PSP_2025-10-07_09_45_51_a721a74b-460d-4c4b-bd7a-890c8939b804.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.8917,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.1083,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.8917
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01239PSP_2026-01-05_10_49_51_9b0d3edc-7521-4c19-8602-79e11ef61485.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 0.7478,
+      "confidence": 0.8115,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.2522,
+        "car": 0.1885,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.7478
+        "police": 0.8115
       }
     },
     {
@@ -4857,46 +4857,46 @@
     {
       "path": "D:/vehicle_refs\\police\\01301VSF_2026-01-22_15_39_52_655ce2f5-7653-4c70-a124-5c82d6e5a690.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.8534,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.8534,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.1466
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01305TLA_2026-01-21_12_57_10_db887fc2-e5ee-40c8-bd38-148e8ecab194.jpg",
       "true": "police",
-      "pred": "police",
+      "pred": "car",
       "confidence": 1.0,
-      "correct": true,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 1.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.0
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01306TLA_2026-01-09_11_34_00_94a8d34d-7ff1-440b-963a-41cf8677a60a.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.5637,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.5637,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.4363
       }
     },
     {
@@ -4918,30 +4918,30 @@
       "path": "D:/vehicle_refs\\police\\01322VSF_2026-01-09_17_23_14_bc40f523-4adc-4fa8-9d3e-79f25f22f4d6.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.8266,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.1734,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.8266
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01328VSF_2026-01-17_14_32_13_af494eb4-b935-4761-8c61-23245860d930.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.8479,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.1521,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.8479
       }
     },
     {
@@ -4992,16 +4992,16 @@
     {
       "path": "D:/vehicle_refs\\police\\01388VSF_2025-09-04_06_05_58_a2655ac5-3c00-40ed-a702-f76e1759a2bf.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.5238,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.5238,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.4762
       }
     },
     {
@@ -5023,15 +5023,15 @@
       "path": "D:/vehicle_refs\\police\\01443VSF_2026-01-06_14_07_33_ef78552a-56b9-4d12-93be-e4cea3168dc3.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.9435,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.0565,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.9435
       }
     },
     {
@@ -5127,16 +5127,16 @@
     {
       "path": "D:/vehicle_refs\\police\\01472VSC_2026-01-20_11_22_43_8ae5965c-4e64-4a51-958d-622ac39fab17.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.7502,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.7502,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.2498
       }
     },
     {
@@ -5203,30 +5203,30 @@
       "path": "D:/vehicle_refs\\police\\01482VSC_2026-01-22_22_41_00_51730c26-e89b-440f-902c-5c6556060aaa.jpg",
       "true": "police",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.813,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.813,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.187
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01515VSC_2a97b247-006b-40a5-b056-261c04fb677f.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 0.8142,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.536,
+      "correct": false,
       "scores": {
-        "ambulance": 0.1858,
+        "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.536,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.8142
+        "police": 0.464
       }
     },
     {
@@ -5308,15 +5308,15 @@
       "path": "D:/vehicle_refs\\police\\01580VSC_2026-01-14_15_54_47_8f006742-8fde-40f3-a62c-c61762698641.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.7475,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.2525,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.7475
       }
     },
     {
@@ -5352,31 +5352,31 @@
     {
       "path": "D:/vehicle_refs\\police\\01613PSP_2026-01-19_16_13_15_e3eea75a-f69d-4aca-99c9-bedba54a0d3d.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 0.5023,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.69,
+      "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.4977,
+        "car": 0.69,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.5023
+        "police": 0.31
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01613PSP_2026-01-21_15_14_06_7f755620-b204-4caa-b474-02b7e84a727d.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.6607,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.3393,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.6607
       }
     },
     {
@@ -5428,15 +5428,15 @@
       "path": "D:/vehicle_refs\\police\\01723VSC_2025-10-07_08_19_33_55ac8eaf-e535-455a-a001-9f6df16c6297.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 0.7479,
+      "confidence": 1.0,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.2521,
+        "car": 0.0,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.7479
+        "police": 1.0
       }
     },
     {
@@ -5518,30 +5518,30 @@
       "path": "D:/vehicle_refs\\police\\01764VSD_2026-01-22_22_17_16_40b25376-e9d1-45a4-bef5-8a1e5fbd2a4e.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.8627,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.1373,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.8627
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01765VSC_2025-09-11_11_39_18_a9ed650f-f3be-4bc1-960f-79907653c3e3.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 0.9156,
+      "confidence": 0.8126,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0844,
+        "car": 0.1874,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.9156
+        "police": 0.8126
       }
     },
     {
@@ -5578,45 +5578,45 @@
       "path": "D:/vehicle_refs\\police\\01780VSC_2025-10-07_09_18_28_cc52ed16-a1fa-4fb5-bfd1-35878546828d.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 0.948,
+      "confidence": 0.7197,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.052,
+        "car": 0.2803,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.948
+        "police": 0.7197
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01846VSD_2025-10-06_21_07_40_21bb8a60-9fe7-443a-8458-b90bf8cd1db7.jpg.jpeg",
       "true": "police",
       "pred": "car",
-      "confidence": 0.7549,
+      "confidence": 0.609,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.7549,
+        "car": 0.609,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.2451
+        "police": 0.391
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\01917BFA_2026-01-23_13_41_59_a0dee9cd-2740-4173-ac2f-bde570bca9db.jpg",
       "true": "police",
-      "pred": "police",
-      "confidence": 1.0,
-      "correct": true,
+      "pred": "car",
+      "confidence": 0.428,
+      "correct": false,
       "scores": {
-        "ambulance": 0.0,
+        "ambulance": 0.1703,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.428,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.4017
       }
     },
     {
@@ -5653,30 +5653,30 @@
       "path": "D:/vehicle_refs\\police\\0JQ0iE16249658009814_l.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.7739,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.2261,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.7739
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\10126PSP_2025-09-10_15_31_27_f39061da-d893-4d74-9edb-215c0a202987.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.7684,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.2316,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.7684
       }
     },
     {
@@ -5773,30 +5773,30 @@
       "path": "D:/vehicle_refs\\police\\25634VSF_2025-09-09_16_14_14_fdd90955-5af3-45ff-baa1-9c824a7323f3.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.5878,
       "correct": true,
       "scores": {
-        "ambulance": 0.0,
+        "ambulance": 0.3308,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.0814,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.5878
       }
     },
     {
       "path": "D:/vehicle_refs\\police\\40136PSP_2026-01-22_15_36_50_0b429fc5-55d6-4ac1-8a7e-1f4805a70518.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 0.9055,
+      "confidence": 0.8714,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0945,
+        "car": 0.1286,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.9055
+        "police": 0.8714
       }
     },
     {
@@ -5818,15 +5818,15 @@
       "path": "D:/vehicle_refs\\police\\40180PSP_2026-01-19_15_43_34_da48c1e2-2ac6-4916-af49-85d5a845a048.jpg",
       "true": "police",
       "pred": "car",
-      "confidence": 1.0,
+      "confidence": 0.8831,
       "correct": false,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 1.0,
+        "car": 0.8831,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 0.0
+        "police": 0.1169
       }
     },
     {
@@ -5863,15 +5863,15 @@
       "path": "D:/vehicle_refs\\police\\40208PSP_c26ac190-0f86-434a-8c3a-166833b9f420.jpg",
       "true": "police",
       "pred": "police",
-      "confidence": 1.0,
+      "confidence": 0.5176,
       "correct": true,
       "scores": {
         "ambulance": 0.0,
         "bus": 0.0,
-        "car": 0.0,
+        "car": 0.4824,
         "fire_truck": 0.0,
         "minibus": 0.0,
-        "police": 1.0
+        "police": 0.5176
       }
     },
     {

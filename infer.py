@@ -8,6 +8,7 @@ Usage:
 import argparse
 import os
 import sys
+import time
 from PIL import Image
 
 import config
@@ -28,11 +29,16 @@ def main():
 
     img = Image.open(args.image).convert("RGB")
     clf = classifier.GalleryKNN()
+    clf.predict(img, k=args.k)  # warm-up: loads model weights
+
+    t0 = time.perf_counter()
     pred = clf.predict(img, k=args.k)
+    elapsed_ms = (time.perf_counter() - t0) * 1000
 
     # Main result
     status = "LOW CONFIDENCE" if pred.low_confidence else "OK"
     print(f"\nResult: {pred.label}  ({pred.confidence:.1%})  [{status}]")
+    print(f"Inference: {elapsed_ms:.0f} ms")
 
     if args.verbose:
         print("\nClass scores:")
